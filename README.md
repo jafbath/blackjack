@@ -1,12 +1,27 @@
 Planning
 
+
+declare variables like deck, players hand and dealers hand. Use arrays so that you can go through the 
+
+need a newGame function
+
+need a drawCard function
+
+need a hit function
+
+need a stand function
+
+need a handValue function
+
+need a endGame function
+
 Start with declaring the deck, dealer, and player variables. Possibly a message varibale at the beginning or wait and do that later when necessary. 
 
-Start with writing the functions for the Deal, hit, stand.
+
 
 Deal will be tied to a button that randomly picks through the deck of cards and then will end up dealing two initial cards to start.
 
-the deal button will also just give the 'dealer' two cards to begin. but they would be face down.
+the deal button will also just give the 'dealer' two cards to begin. but only one will be visible.
 
 animations should be after thought.
 
@@ -29,7 +44,11 @@ for loop to do the hand selection for the player and dealer
 
 else if statements to determine what message shows up when the card values are determined. use value variables determine modul messages
 
-not sure how to streamline the values. 
+write a function for end of game values when the player presses hit button
 
-make it so I'm not writing out a million values. have to come back to that
+write a function to check if the end of the game is determined 
+
+if dealer is less than 17 then they need to continue to hit. 
+
+assign value to facecards but can let the actual number of lower cards just equal their value
 
