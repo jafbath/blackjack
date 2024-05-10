@@ -1,3 +1,17 @@
 body {
     background-color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#dealerHand img {
+    height: 250px;
+    width: 175px;
+    margin: 5px;
+}
+
+#playerHand img {
+    height: 250px;
+    width: 175px;
+    margin: 5px;
 }

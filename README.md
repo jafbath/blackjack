@@ -29,9 +29,6 @@ get the buttons linked and start writing functions for the buttons.
 
 dont touch css until the engine is revin 
 
-
-
-
 Hit will be a similar function picking randomly from the 'deck' and will give you a new card.
 
 Stand will just progress the action of the turn. so the dealer would then finish the turn when the stand button is pressed.
@@ -39,8 +36,6 @@ Stand will just progress the action of the turn. so the dealer would then finish
 maybe make it text based and then float the images in..
 
 aces are going to be interesting
-
-for loop to do the hand selection for the player and dealer
 
 else if statements to determine what message shows up when the card values are determined. use value variables determine modul messages
 
@@ -51,4 +46,15 @@ write a function to check if the end of the game is determined
 if dealer is less than 17 then they need to continue to hit. 
 
 assign value to facecards but can let the actual number of lower cards just equal their value
+
+
+Try to figure out a message system or text box or modul that will display when someone gets blackjack or when someone busts. 
+
+could display messages in a flexbox container in the middle of the screen that is semi transparent
+
+super important is trying to find a way to only show the value and visibility of one of the dealers cards
+
+must implement wagering feature. could do this with tying $5 $10 $25 chips near player that would show a total value of the bet and how much you have left. 
+
+
 
