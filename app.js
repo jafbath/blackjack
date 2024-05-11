@@ -7,6 +7,8 @@ function newGame() {
     deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"]
     playerHand = [drawCard(), drawCard()]
     dealerHand = [drawCard(hidden), drawCard()]
+    updateDealerHandValue()
+    updatePlayerHandValue()
     console.log("Player hand ", playerHand, handValue(playerHand))
     console.log("Dealer hand ", dealerHand, handValue(dealerHand))
 }
@@ -14,13 +16,15 @@ function newGame() {
 
 function hit() {
     playerHand.push (drawCard())
+    updatePlayerHandValue()
     console.log("Player hand  ", playerHand, handValue(playerHand))
 }
 
 function stand() {
     while (handValue(dealerHand) < 17) {
         dealerHand.push (drawCard())
-    }   console.log("Dealer hand  ", dealerHand, handValue(dealerHand))
+    }   updateDealerHandValue()
+    console.log("Dealer hand  ", dealerHand, handValue(dealerHand))
 }
 
 function drawCard() {
@@ -44,5 +48,13 @@ function handValue(hand) {
         aces -= 1
     }
     return value
+}
+
+function updateDealerHandValue() {
+    document.getElementById("dealerHandValue").innerHTML = handValue(dealerHand)
+}
+
+function updatePlayerHandValue() {
+    document.getElementById("playerHandValue").innerHTML = handValue(playerHand)
 }
 

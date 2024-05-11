@@ -9,7 +9,7 @@
 <body>
     <h1>Blackjack</h1>
 
-    <h2>Dealer: <span id="handValue"></span></h2>
+    <h2>Dealer: <span id="dealerHandValue"></span></h2>
         <div id="dealerHand">
             <img id="hidden" src="">
             <img src="">
@@ -17,26 +17,28 @@
         </div>
     
 
-    <h2>Player: <span id="handValue"></span></h2>
+    <h2>Player: <span id="playerHandValue"></span></h2>
         <div id="playerHand">
             <img src="">
             <img src="">
         </div>
-        <div class="chips">
-            <button id="smallChip"> 
-                <img src="">
-            </button>
-            <button id="mediumChip">
-                <img src="">
-            </button>
-            <button id="largeChip">
-                <img src="">
-            </button>
-        </div>
+        
 
     <button id="newGame" onclick = "newGame()"> New Game</button>
     <button id="hit" onclick = "hit()"> Hit </button>
     <button id="stand" onclick = "stand()"> Stand </button>
+
+    <div class="chips">
+        <button id="smallChip"> 
+            <img src="">
+        </button>
+        <button id="mediumChip">
+            <img src="">
+        </button>
+        <button id="largeChip">
+            <img src="">
+        </button>
+    </div>
 
 
     <nav> Put in an unordered list of links, possibly trello board or just for show</nav>
