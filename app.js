@@ -4,11 +4,27 @@ let dealerHand = []
 let message = ""
 let playerChips = 100
 let currentWager = 0
-var hidden
+let hidden = "cards/red-back-card.jpeg"
+let cardImages = {
+    "A": "cards/A-C.jpeg",
+    2: "cards/2-C.jpeg",
+    3: "cards/3-C.jpeg",
+    4: "cards/4-C.jpeg",
+    5: "cards/5-C.jpeg",
+    6: "cards/6-C.jpeg",
+    7: "cards/7-C.jpeg",
+    8: "cards/8-C.jpeg",
+    9: "cards/9-C.jpeg",
+    10: "cards/10-C.jpeg",
+    "J": "cards/J-C.jpeg",
+    "Q": "cards/Q-C.jpeg",
+    "K": "cards/K-C.jepg"
+
+}
 
 function newGame() {
         document.getElementById("messages").innerHTML = ""
-        deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"]
+        deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
         playerHand = [drawCard(), drawCard()]
         dealerHand = [drawCard(hidden), drawCard()]
         updateDealerHandValue()
@@ -38,7 +54,16 @@ function stand() {
 }
 
 function drawCard() {
-    return deck[Math.floor(Math.random() * deck.length)]
+    let card = deck[Math.floor(Math.random() * deck.length)]
+    let img = document.createElement("img")
+        img.src = cardImages[card]
+        img.alt = card
+
+    document.getElementById("playerHand").appendChild(img)
+
+    document.getElementById("dealerHand").appendChild(img)
+    
+    return card    
 }
 
 function handValue(hand) {
