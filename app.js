@@ -18,12 +18,14 @@ let cardImages = {
     10: "cards/10-C.jpeg",
     "J": "cards/J-C.jpeg",
     "Q": "cards/Q-C.jpeg",
-    "K": "cards/K-C.jepg"
+    "K": "cards/K-C.jpeg"
 
 }
 
 function newGame() {
         document.getElementById("messages").innerHTML = ""
+        document.getElementById("playerHand").innerHTML = ""
+        document.getElementById("dealerHand").innerHTML = ""
         deck = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
         playerHand = [drawCard(), drawCard()]
         dealerHand = [drawCard(hidden), drawCard()]
@@ -61,7 +63,7 @@ function drawCard() {
 
     document.getElementById("playerHand").appendChild(img)
 
-    document.getElementById("dealerHand").appendChild(img)
+    // document.getElementById("dealerHand").appendChild(img)
     
     return card    
 }
@@ -117,8 +119,8 @@ function betTen() {
     updateCurrentWager()
     updatePlayerChips()
 }
-function betTwenty() {
-    placeBet(20)
+function betTwentyFive() {
+    placeBet(25)
     updateCurrentWager()
     updatePlayerChips()
 }
