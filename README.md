@@ -94,7 +94,7 @@ User can bet chips based on how strong their hand is.
 * Implement CSS so the user can change the theme/background of the game.
 
 ## <a name="deployment"></a>Deployed Link
-[Github](http://127.0.0.1:5500/projects/blackjack/index.html)
+[Github](https://jafbath.github.io/blackjack/)
 
 * You can view the repository:
 [Github.com](https://github.com/jafbath/blackjack)
