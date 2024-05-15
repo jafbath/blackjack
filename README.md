@@ -56,7 +56,7 @@ super important is trying to find a way to only show the value and visibility of
 
 must implement wagering feature. could do this with tying $5 $10 $25 chips near player that would show a total value of the bet and how much you have left. 
 
-# Connect-Four
+# BlackJack
 
 #### A full-stack web application built as first project.
 <img src="cards/blackJack READ.me page.png" alt="BlackJack ScreenShot"/>
@@ -94,10 +94,10 @@ User can bet chips based on how strong their hand is.
 * Implement CSS so the user can change the theme/background of the game.
 
 ## <a name="deployment"></a>Deployed Link
-[github](https://wonderful-brahmagupta-6a75d3.netlify.com)
+[Github](http://127.0.0.1:5500/projects/blackjack/index.html)
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/Connect-4)
+[Github.com](https://github.com/jafbath/blackjack)
 * If unable to view please go live locally through VS Code
     
 ## Works Cited:
