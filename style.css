@@ -31,3 +31,11 @@ body {
     object-fit: contain;
     
 }
+
+#messages {
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+}
