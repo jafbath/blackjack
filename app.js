@@ -140,7 +140,7 @@ function betTwentyFive() {
 
 function placeBet(amount) {
     if (amount > playerChips) {
-        document.getElementById("messageModal").innerHTML = `You dont have enough money for that bet!`
+        document.getElementById("messages").innerHTML = `You dont have enough money for that bet!`
     } else {
         currentWager += amount
         playerChips -= amount
