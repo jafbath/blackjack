@@ -41,10 +41,15 @@ User can bet chips based on how strong their hand is.
 * You can view the repository:
 [Github.com](https://github.com/jafbath/blackjack)
 * If unable to view please go live locally through VS Code
+
+## <a name="author"></a>About the Author
+* This is my first time trying something like this. I do not have any previous computer coding experience but I take great pride in the product I was able to produce as a first project (other than some styling aspects). 
+* I come from a business background and I coin myself as more analytical and mathematical. The area that I could improve on is the creativity aspect using CSS to make the web browser more appealing to the user which, in my opinion, is what really draws someone to interact with what you have created. 
     
 ## Works Cited:
-*The map() function helped me tie in the specific suits of my cards to randomize when the actual card was called. This saved me a lot of time from writing "if" statements in my drawCard() function which in turn, helped me practice DRY code.
+* The map() function helped me tie in the specific suits of my cards to randomize when the actual card was called. This saved me a lot of time from writing "if" statements in my drawCard() function which in turn, helped me practice DRY code.
 -https://www.w3schools.com/jsref/jsref_map.asp
+
  
 
 
